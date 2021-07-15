@@ -1,0 +1,22 @@
+<div mat-dialog-content style="min-height: 635px;">
+    <mat-card class="example-card" style="margin: 1em">
+        <mat-card-header>
+            <mat-card-title>{{ character.name }}</mat-card-title>
+            <mat-card-subtitle>{{ character.gender }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="character.image" alt="Photo of a Shiba Inu" />
+        <mat-card-content>
+            <p>Episodes: <small>{{character.episode.length}}</small></p>
+            <p>Origin: <small>{{character.origin.name}}</small></p>
+            <p>Specie: <small>{{character.species}}</small></p>
+            <p>Status: <small>{{character.status}}</small></p>
+        </mat-card-content>
+    </mat-card>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()" >Close</button>
+</div>
+
+
+
+
